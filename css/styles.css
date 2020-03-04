@@ -45,7 +45,10 @@ header {
 }
 
 .header__title {
-    font-size: 1.6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
     text-align: center;
 }
 
@@ -57,11 +60,12 @@ header {
     text-align: center;
     padding: 20px 0;
     left: 0;
-    top: 60px;
+    top: 100px;
     background: #0f1c29;
     width: 100vw;
     height: 100vh;
-    transition: 0.5 ease-in-out all;
+    transition: 0.5s ease-in-out all;
+    transform: translateX(100%);
 }
 
 
@@ -75,7 +79,26 @@ header {
 
 .header__nav a {
     text-decoration: none;
+    font-size: 2em;
     color: #010304;
     padding: 10px 35px;
     background: #c4d7ea;
 }
+
+.hamburger {
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px;
+    margin: 20px;
+    border: 2px solid black;
+}
+
+.hamburger_bar {
+    height: 2px;
+    width: 20px;
+    background: black;
+    position: relative;
+    transform: .5s ease all;
+}
+
+.hamburger_bar::
