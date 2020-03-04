@@ -1,0 +1,40 @@
+/**** CSS Reset ****/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+    overflow-x: hidden;
+}
+
+/**** End Reset ****/
+
+/**** Body ****/
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/**** End Body ****/
+
+/**** Grid ****/
+.grid {
+    display: grid;
+    grid-template-columns: 150px auto 150px;
+}
+
+header,
+main,
+footer {
+    grid-column: 1 / -1;
+}
+
+/**** End Grid ****/
+
+main {
+    height: 100vh;
+    width: 100%;
+    background-color: #4881bc;
+}
