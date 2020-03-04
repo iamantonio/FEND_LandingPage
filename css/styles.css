@@ -38,3 +38,44 @@ main {
     width: 100%;
     background-color: #4881bc;
 }
+
+header {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header__title {
+    font-size: 1.6em;
+    text-align: center;
+}
+
+.header__navbar {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0;
+    left: 0;
+    top: 60px;
+    background: #0f1c29;
+    width: 100vw;
+    height: 100vh;
+    transition: 0.5 ease-in-out all;
+}
+
+
+
+.navItems {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 10px;
+}
+
+.header__nav a {
+    text-decoration: none;
+    color: #010304;
+    padding: 10px 35px;
+    background: #c4d7ea;
+}
